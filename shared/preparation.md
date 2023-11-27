@@ -4,7 +4,7 @@ During this project, you will use some tools and software that possibly you have
 
 The tools I will mention below are not only important for your bachelor project, but also essential for your career in the coming decades. They are like “pen and paper” for programmers. You will use them everywhere you go. With this, I hope I have given you enough motivation. :rofl:
 
-> **Important**
+> [!Important]
 > 1. Don’t try to learn everything right in the beginning. Learn them little by little with practices and patience.
 > 2. Google is your friend. Whenever you don't know something, google it first.
 
