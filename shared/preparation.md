@@ -42,7 +42,7 @@ auto main() -> int
 ```
 So the first thing you could do is to try to compile and run this script in the terminal on your Linux system. Then you could start to search what's the meaning of all those keywords, like `#include`, `std::cout`. Later you could dig more, like trying to do same things in C++ as you did in Julia. You could find your Julia scripts you wrote during the lecture and try to rewrite it in C++ if possible. For now, I need to give you two major warnings when you learn C++ in the internet:
 
-> **Warning**
+> [!Warning]
 > 1. If someone says C/C++ or says you must learn C first before C++, stay away from them. C and C++ are completely different langauges and in many ways, learning C has a harmful impact on your C++ learning. Yes, you could write C in C++ code but this is a BAD BAD practice.
 > 2. Learn Modern C++. In the internet, you could find a lot of source materials about C++. Not all of them are good. I would say most of them are bad. The reason is because most of them are either written in the last century or written by "the people from last century". 
 
