@@ -15,7 +15,7 @@ Häufige Befehle, die in der Konsole verwendet werden:
 Alias:
 - Viele der oben genannten Befehle werden sehr regelmäßig verwendet, weswegen es sich lohnt sogenannte "Alias" (Abkürzungen) zu setzten.
 - Dafür muss die `.bashrc` geöffnet werden, diese Datei wir bei jedem öffnen des Terminals mitgeladen. Wechsel dafür mit `cd ~` in dein Homeverzeichnis.
-- `gedit .bashrc` kannst du nun die Datei öffnen und bearbeiten (gedit ist ein Texteditor).
+- `vim .bashrc` kannst du nun die Datei öffnen und bearbeiten (vim ist ein Texteditor, `:q` zu schließen).
 - Eine neue alias setzt du, indem du `alias <short-cut>=<befehl>` eingibst, z.B. `alias..=‘cd ..‘`, so musst du beim Wechseln in ein Verzeichnis davor nicht mehr `cd ..` sondern nur noch `..` eingeben, denk dran vor dem Schließen deine Änderung zu speichern.
 - Um die Änderung zu laden musst du die bashrc nochmal einlesen mit `. .bashrc`, wäre auch durch öffnen und schließen des Terminals passiert.
 
@@ -25,7 +25,7 @@ Kopieren, Verschieben, Löschen:
 - `rm -r <Datei/Verzeichnis>`, löscht Datei/Verzeichnis, bei Verzeichnis muss -r angegeben werden
 
 Schreiben von Dateien
-- `gedit`, Editor um Dateien anzusehen, oder zu erstellen (alternativ `vim`)
+- `vim`, Editor um Dateien anzusehen, oder zu erstellen (alternativ `nvim` wenn möglich)
 
 Anzeigen von Dateien:
 - `cat <Datei0> … <Dateien>`, zeigt die Dateien hintereinander an
@@ -55,6 +55,6 @@ Zugriffsrechte:
 Secure Shell:
 - Damit große Datenmengen nicht auf dem lokalen PC bearbeitet werden müssen besitzt das IKP eine Reihe von Servern:
 Gaia, Helios, Kronos, Poseidon, Thanatos.
-- Durch die Eingabe von `ssh -X user@server` kann von der lokalen Konsole auf den Server zugegriffen werden, unter Eingabe des Passworts.
+- Durch die Eingabe von `ssh -Y user@server` kann von der lokalen Konsole auf den Server zugegriffen werden, unter Eingabe des Passworts.
 - Von allen Servern kannst du auf das Verzeichnis `/data/` zu greifen, hier ist für jeden Benutzer ein Verzeichnis angelegt, sowie ein Gruppenverzeichnis unter `/data/Groups/agzilges`.
 - Die Verschlüsselung der Daten verläuft über einen public und einen private key. Ist der public key auf dem Server hinterlegt, kann die Authentifizierung über den private key gelingen, ohne dass ein Passwort nötig wäre.
