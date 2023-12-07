@@ -37,9 +37,9 @@ The project is centered around the simulation of NeuLAND detector and applying c
     These three aspects I listed above are kind of intertwined and dependent on each other. So we will not go through them one by one in order but rather bring them together.
     
 - Week 4\~5: **Your "first histogram"**
-    After a few weeks of learning C++, we could move to those frameworks that are crucial to your project: namely ROOT and R3BRoot. They are both very large C++ libraries created decades ago. Therefore, they do not comply with modern C++ standard and generally are not good practices.
 
-    > [!Warning]
-    > ROOT contains a lot of custom data types used by many people in physics community. Most of them are **AWFUL** and please ignore them. Instead, you should use STL data types provided by C++ standard committee.
-    
+    After a few weeks of learning C++, we could move to those frameworks that are crucial to your project: namely ROOT and R3BRoot. They are both very large C++ libraries created decades ago. Therefore, they do not comply with modern C++ standard and generally are not good practices.
     The main purpose we use ROOT is for data storage (`.root` file) and data visualization (if you mind the beauty of plots, you should use Python). From the R3BRoot, I will show you how to generate your first simulated data and store them into root files. And then from the root files, you will learn how to plot some values from the data inside using R3BRoot.
+
+> [!Warning]
+> ROOT contains a lot of custom data types used by many people in physics community. Most of them are **AWFUL** and please ignore them. Instead, you should use STL data types provided by C++ standard committee.
