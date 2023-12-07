@@ -4,7 +4,7 @@ The project is centered around the simulation of NeuLAND detector and applying c
 
 - Week 1: **Unix system, Git(hub) and "Hello world"**
 
-    We will start with the most basic things in the first week, like how to navigate in the terminal (see [this tutorial from our institute](../linux)) and how to write a C++ "Hello world" (Using CMake as the build system). I'm not sure how much you've learned before or during last few weeks. But if you already knew some of them, that's great and we can move faster. An IDE is also very important. For the most of the time, we are going to work inside a server and the modern IDEs may not work very well in this case. Therefore, (if you want) I will also teach you some basic configurations and usage about [NeoVim](https://github.com/neovim/neovim).
+    We will start with the most basic things in the first week, like how to navigate in the terminal (see [this tutorial from our institute](../shared/linux.md)) and how to write a C++ "Hello world" (Using CMake as the build system). I'm not sure how much you've learned before or during last few weeks. But if you already knew some of them, that's great and we can move faster. An IDE is also very important. For the most of the time, we are going to work inside a server and the modern IDEs may not work very well in this case. Therefore, (if you want) I will also teach you some basic configurations and usage about [NeoVim](https://github.com/neovim/neovim).
 
 
 - Week 2\~4: **OOP, C++ and CMake**
