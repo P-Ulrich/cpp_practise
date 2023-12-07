@@ -9,7 +9,7 @@ The project is centered around the simulation of NeuLAND detector and applying c
 
 - Week 2\~4: **OOP, C++ and CMake**
   
-    These weeks we will dive into C++ and OOP world. Again, we will only discuss the basic one and I hope you will learn more advanced ones little by little in the coming years. 
+    These weeks we will dive into C++ and OOP world. Again, we will only discuss the basic ones and I hope you will learn more advanced ones little by little in the coming years. 
 
     The basic ones for OOP are mainly:
 
