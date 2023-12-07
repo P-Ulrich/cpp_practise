@@ -3,10 +3,12 @@
 The project is centered around the simulation of NeuLAND detector and applying cuts on the simulated data to eliminate the unwanted high energy deposition. However, in the first few months, you should focus more on the basic aspects and tools, such as Unix system, git (Github), C++ and the simulation framework of [R3BRoot](https://github.com/R3BRootGroup/R3BRoot). Most of the things you will do later relies heavily on how well you understand the those tools and frameworks. But don't worry. I introduce them to you little by little throughout these weeks. Here are some more detailed plans I have in my mind **INITIALLY**:
 
 - Week 1: **Unix system, Git(hub) and "Hello world"**
+  
     We will start with the most basic things in the first week, like how to navigate in the terminal and how to write a C++ "Hello world" (Using CMake as the build system). I'm not sure how much you've learned before or during last few weeks. But if you already knew some of them, that's great and we can move faster. An IDE is also very important. For the most of the time, we are going to work inside a server and the modern IDEs may not work very well in this case. Therefore, (if you want) I will also teach you some basic configurations and usage about [NeoVim](https://github.com/neovim/neovim).
 
 
 - Week 2\~4: **OOP, C++ and CMake**
+  
     These weeks we will dive into C++ and OOP world. Again, we will only discuss the basic one and I hope you will learn more advanced ones little by little in the coming years. 
 
     The basic ones for OOP are mainly:
