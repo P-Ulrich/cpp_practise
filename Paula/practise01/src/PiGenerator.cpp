@@ -44,21 +44,23 @@ void PiGenerator::pi_mean_and_err(int num_stones, int precision)
         pi_estimates.emplace_back(calculate_pi(num_stones));
     }
 
-    for (const auto& element : pi_estimates)
-    {
-        sum_pi += element;
-    }
+    sum_pi = std::accumulate(pi_estimates.begin(), pi_estimates.end(), 0.);
 
     double mean_pi = sum_pi / precision;
 
     pi_result.value = mean_pi;
 
-    for (const auto& element : pi_estimates)
-    {
-        sum_pi_squared += (element - mean_pi) * (element - mean_pi);
-    }
+    // for (const auto& element : pi_estimates)
+    // {
+    //     sum_pi_squared += (element - mean_pi) * (element - mean_pi);
+    // }
 
-    auto variance = sum_pi_squared / precision;
+    auto variance = std::accumulate(pi_estimates.begin(),
+                                    pi_estimates.end(),
+                                    0.,
+                                    [mean_pi, precision](auto init, auto element)
+                                    { return init + ((element - mean_pi) * (element - mean_pi)) / precision; });
+    // auto variance = sum_pi_squared / precision;
 
     pi_result.error = sqrt(variance);
 }
