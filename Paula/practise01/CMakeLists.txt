@@ -9,5 +9,5 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_subdirectory(src)
 add_executable(main main.cpp)
-target_link_libraries(main PUBLIC PiGenerator ROOT::MathCore ROOT::RIO ROOT::Hist)
+target_link_libraries(main PUBLIC PiGenerator)
 

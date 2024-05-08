@@ -1,8 +1,18 @@
 #include "PiGenerator.hpp"
-
+#include <iostream>
+#include <TFile.h>
 void PiGenerator::set_num_of_loops(int loops) { num_loops = loops; }
 
 void PiGenerator::set_num_of_stones(int stones) { num_stones = stones; }
+
+void PiGenerator::set_num_bins(int bins) { num_bins = bins; }
+
+void PiGenerator::set_intervalls_hist(int left, int right)
+{
+    inter_hist_left = left;
+    inter_hist_right = right;
+}
+void PiGenerator::set_num_hist(int num_hist) { num_hist_ = num_hist; }
 
 auto PiGenerator::rd_num_gen(double interval_left, double interval_right) -> double
 {
@@ -63,6 +73,24 @@ void PiGenerator::pi_mean_and_err(int num_stones, int precision)
     // auto variance = sum_pi_squared / precision;
 
     pi_result.error = sqrt(variance);
+}
+
+void PiGenerator::fill_hist_pi()
+{
+    for (int i{}; i < num_hist_; ++i)
+    {
+        histogramm->Fill(calculate_pi(num_stones));
+    }
+}
+void PiGenerator::create_hist_file()
+{
+
+    auto file = TFile("hist.root", "RECREATE");
+    histogramm = std::make_unique<TH1F>("h1", "h1_titel", num_bins, inter_hist_left, inter_hist_right).release();
+    std::cout << "Starting File Loop \n";
+    fill_hist_pi();
+    histogramm->Write();
+    file.Close();
 }
 
 auto PiGenerator::get_results() -> Result
